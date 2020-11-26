@@ -1,0 +1,185 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  align-items: center;
+}
+
+.card__img {
+  position: absolute;
+  left: calc(50% - 70px);
+  top: 10px;
+  width: 140px;
+  height: 164px;
+}
+
+.card__frame {
+  width: 160px;
+  height: 195px;
+  background-color: rgb(238, 238, 238);
+}
+
+.card__bg-img-triangle1 {
+  position: absolute;
+  width: 178px;
+  height: 163px;
+  left: 35px;
+  top:-50px;
+  z-index: -1;
+}
+
+.card__bg-img-triangle2 {
+  position: absolute;
+  width: 178px;
+  height: 163px;
+  right: 0;
+  top:-40px;
+  z-index: -1;
+}
+
+.card__bg-img-shape1 {
+  position: absolute;
+  width: 223px;
+  height: 112px;
+  left: 40px;
+  top: 40px;
+  z-index: -1;
+}
+
+.card__bg-img-shape2 {
+  position: absolute;
+  width: 223px;
+  height: 112px;
+  left: 40px;
+  top: 40px;
+  z-index: -1;
+}
+
+.card__bg-img-circle1 {
+  position: absolute;
+
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  top: -20px;
+  right: 20px;
+  background-color: #f4bab5;
+  z-index: -1;
+}
+
+.card__bg-img-circle2 {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  top: -20px;
+  left: 20px;
+  background-color: #c9cfda;
+  z-index: -1;
+}
+
+.card__bg-img-btn {
+  position: absolute;
+  top: -60px;
+  left: 100px;
+  width: 64px;
+  height: 267px;
+  background-color: #154938;
+  border-radius: 32px;
+  transform: rotate(49deg);
+  z-index: -1;
+}
+
+.card__bg-img-btn2 {
+  position: absolute;
+  top: -60px;
+  left: 100px;
+  width: 64px;
+  height: 267px;
+  background-color: #82a08b;
+  border-radius: 32px;
+  transform: rotate(49deg);
+  z-index: -1;
+}
+
+.card__bg-img-star {
+  position: absolute;
+  top: 60px;
+  right: -10px;
+  width: 171px;
+  height: 171px;
+  z-index: -1;
+}
+
+.card__bg-img-star2 {
+  position: absolute;
+  top: -60px;
+  right: -10px;
+  width: 171px;
+  height: 171px;
+  z-index: -1;
+}
+
+.card__bg-img-pentagon {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  width: 171px;
+  height: 171px;
+  z-index: -1;
+}
+
+.card__bg-img-pentagon2 {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  width: 171px;
+  height: 171px;
+  z-index: -1;
+}
+
+.card__name {
+  font-size: 36px;
+}
+
+.card__second-img1 {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 87px;
+  height: 96px;
+}
+
+.card__second-img2 {
+  position: absolute;
+  right: 0;
+  top: -70px;
+  width: 106px;
+  height: 112px;
+}
+
+
+.card__second-img3 {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  width: 139px;
+  height: 178px;
+}
+
+.card__second-img4 {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 66px;
+  height: 148px;
+}
+
+.card__second-img5 {
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  width: 123px;
+  height: 110px;
+}

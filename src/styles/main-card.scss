@@ -1,14 +1,16 @@
 .main-card {
   display: flex;
+  position: relative;
   flex-direction: row;
   background-color: #f4bab5;
-  height: 452px;
+  height: 500px;
+  width: 1024px;
 }
 
 .main-card__photo-main {
   position: absolute;
-  left: calc(50% - 130px);
-  top: calc(50% - 107px);
+  left: calc(50% - 118px);
+  top: calc(50% - 132px);
   z-index: 2;
 }
 
@@ -72,7 +74,18 @@
   line-height: 21px;
   background-color: #f4bab5;
   margin: 25px auto;
+  cursor: pointer;
 }
 
-// .main-card__slider { 
-// }
+.main-card__text-btn:hover {
+  background-color: #000;
+  color:#fff;
+}
+
+.main-card__slider {
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: 10px;
+  color: #000;
+  z-index: 2;
+}

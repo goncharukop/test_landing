@@ -3,12 +3,13 @@
 @import "typography";
 @import "header";
 @import "nav";
-@import "page";
 @import "news";
 @import "stars";
 @import "main-card";
 @import "gallery";
 @import "card";
+@import "page";
+@import "footer";
 
 *,
 ::after,
@@ -30,3 +31,7 @@ li {
 a {
   text-decoration: none;
 }
+
+// input {
+//   radio
+// }
