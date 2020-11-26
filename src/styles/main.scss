@@ -1,7 +1,32 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "nav";
+@import "page";
+@import "news";
+@import "stars";
+@import "main-card";
+@import "gallery";
+@import "card";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 body {
-  background: $c-gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0 auto;
+  column-gap: 20px;
+  margin-top: 20px;
+
+  width: 909px;
+}
+
+.nav__item {
+  line-height: 15px;
+}
+
+.nav__link {
+  &:hover {
+    font-weight: 500;
+  }
+}

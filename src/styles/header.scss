@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__text {
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.header__activity {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 27px;
+}
+
+.header__activity-item {
+  display: inline-block;
+  margin: auto 5px;
+}
+
+.header__logo {
+  width: 67px;
+  height: 82px;
+  margin: 0 auto;
+}
+
+.header__logo2 {
+  width: 286px;
+  height: 79px;
+  margin: 8px auto 0;
+}

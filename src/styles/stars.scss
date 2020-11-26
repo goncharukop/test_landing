@@ -1,0 +1,29 @@
+.stars {
+  display: flex;
+  position: relative;
+  height: 145px;
+  width: 1024px;
+}
+
+.stars__title {
+  font-size: 36px;
+  text-align: center;
+  margin: 55px auto;
+  z-index: 2;
+}
+
+.stars__img1 {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  width: 905px;
+  height: 119px;
+}
+
+.stars__img2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 320px;
+  height: 86px;
+}
