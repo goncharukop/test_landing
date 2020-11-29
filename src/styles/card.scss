@@ -48,7 +48,7 @@
     width: 178px;
     height: 163px;
     left: 35px;
-    top:-50px;
+    top: -50px;
     z-index: -2;
   }
   
@@ -57,13 +57,13 @@
     width: 178px;
     height: 163px;
     right: 0;
-    top:-40px;
+    top: -40px;
     z-index: -1;
   
     @media (max-width: 320px) {
       width: 89px;
       height: 81px;
-      top:-20px;
+      top: -20px;
     }
   }
   
