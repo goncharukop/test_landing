@@ -1,8 +1,8 @@
 @import "utils";
-@import "fonts";
 @import "typography";
 @import "header";
 @import "nav";
+@import "burger-nav";
 @import "news";
 @import "stars";
 @import "main-card";
@@ -30,8 +30,5 @@ li {
 
 a {
   text-decoration: none;
+  color: #000;
 }
-
-// input {
-//   radio
-// }

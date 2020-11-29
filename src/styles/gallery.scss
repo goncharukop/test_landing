@@ -3,21 +3,38 @@
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  width: 1024px;
+  width: 100%;
 
+  &__title {
+    font-size: 36px;
+    text-align: center;
+  
+    @media (max-width: 320px) {
+      width: 270px;
+      font-size: 25px;
+      margin: 0 auto;
+    }
+  }
+  
+  &__table {
+    display: grid;
+    width: 940px;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
+    row-gap: 75px;
+    padding-top: 40px;
+    margin: 0 auto;
+  
+    @media (max-width: 320px) {
+      grid-template-columns: repeat(2, 140px);
+      row-gap: 35px;
+      width: 300px;
+    }
+  }
 }
 
-.gallery__title {
-  font-size: 36px;
-  text-align: center;
-}
-
-.gallery__table {
-  display: grid;
-  width: 940px;
-  grid-template-columns: repeat(3, 300px);
-  column-gap: 20px;
-  row-gap: 75px;
-  padding-top: 40px;
-  margin: 0 auto;
+@media (max-width: 320px) {
+  .gallery__card:nth-child(3n+1) {
+    display: none;
+  }
 }

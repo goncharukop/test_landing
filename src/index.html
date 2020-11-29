@@ -6,9 +6,11 @@
     <title>Test task</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
+  <body class="page">
     <header class="header page__header">
-      <div class="header__text">COVID-19: Learn what we’re doing to keep the community and our staff safe.</div>
+      <div class="header__text">
+        COVID-19: Learn what we’re doing to keep the community and our staff safe.
+      </div>
       <div class="header__activity">
         <div class="header__activity-item">
           <img src="https://lun-eu.icons8.com/api/assets/ccedc075-37b3-43b2-a2d6-2d3238321bf9/Bitmap.png" alt="search icon">
@@ -20,90 +22,180 @@
           <img src="https://lun-eu.icons8.com/api/assets/c900f179-f821-4b4d-9e06-a5514dc237ff/Bitmap.png" alt="black heart">
         </div>
       </div>
-      <div class="header__logo">
-        <img src="https://lun-eu.icons8.com/api/assets/8d05445e-3c33-4562-a6ab-dadef5b3f9ea/Logomark_Black.png" alt="company logo">
+      <div class="header__logo-wrap">
+        <img
+          class="header__logo"
+          src="https://lun-eu.icons8.com/api/assets/8d05445e-3c33-4562-a6ab-dadef5b3f9ea/Logomark_Black.png"
+          alt="company logo"
+        >
       </div>
-      <div class="header__logo2">
-        <img src="https://lun-eu.icons8.com/api/assets/327b604c-8012-4a6f-bb76-468faaf033ff/taglinewithlogo-2.png" alt="logo with text">
+      <div class="header__logo-wrap">
+        <img
+          class="header__logo2"
+          src="https://lun-eu.icons8.com/api/assets/327b604c-8012-4a6f-bb76-468faaf033ff/taglinewithlogo-2.png"
+          alt="logo with text"
+        >
       </div>
     </header>
 
     <nav class="nav page__nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#news" class="nav__link">
             What's news
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#brands" class="nav__link">
             Brands
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#curations" class="nav__link">
             Curations
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#art" class="nav__link">
             Art
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#art" class="nav__link">
             Beauty
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#main" class="nav__link">
             Self care
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#art" class="nav__link">
             Style
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#art" class="nav__link">
             Life style
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#main" class="nav__link">
             Tech
           </a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#news" class="nav__link">
             Stories
           </a>
         </li>
       </ul>
-
     </nav>
 
-    <section class="news page__news">
+    <input
+      type="checkbox"
+      name="checkbox"
+      id="toggler"
+      class="burger-nav__toggler"
+    >
+    <label for="toggler" class="burger-nav__label"></label>
+
+    <div class="burger-nav page__burger-nav">
+      <img
+        class="burger-nav__logo"
+        src="https://lun-eu.icons8.com/api/assets/8d05445e-3c33-4562-a6ab-dadef5b3f9ea/Logomark_Black.png"
+        alt="company logo"
+      >
+      <img
+        class="burger-nav__logo2"
+        src="https://lun-eu.icons8.com/api/assets/327b604c-8012-4a6f-bb76-468faaf033ff/taglinewithlogo-2.png"
+        alt="logo with text"
+      >
+
+      <ul class="burger-nav__list">
+        <li class="burger-nav__item">
+          <a href="#news" class="burger-nav__link">
+            What's news
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#brands" class="burger-nav__link">
+            Brands
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#curations" class="burger-nav__link">
+            Curations
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#art" class="burger-nav__link">
+            Art
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#art" class="burger-nav__link">
+            Beauty
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#main" class="burger-nav__link">
+            Self care
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#main" class="burger-nav__link">
+            Style
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#art" class="burger-nav__link">
+            Life style
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#art" class="burger-nav__link">
+            Tech
+          </a>
+        </li>
+        <li class="burger-nav__item">
+          <a href="#news" class="burger-nav__link">
+            Stories
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section id="news" class="news page__news">
       <div class="news__title">
         Live Curations
       </div>
-      <p class="news__text">Our weekly live curations are one-of-a-kind live shopping events hosted</br>
-        by tastemakers from around the globe. We invite you to their worlds to give</br>
-        you an interactive and informative shopping experience. These curations feature</br>
-        hand-picked products and art from the most interesting misson-driven,</br>
-        design-oriented, innovative brands and artists in our community.
+      <p class="news__text">
+        Our weekly live curations are one-of-a-kind
+        live shopping events hosted by tastemakers from around the globe.
+        <span class="news__text2">We invite you to their worlds to give
+          you an interactive and informative shopping experience.
+        </span>
+        These curations feature
+        hand-picked products and art from the most interesting 
+        <span class="news__text2">
+          misson-driven, design-oriented, innovative
+        </span>
+        brands and artists in our community.
       </p>
 
     </section>
 
-    <section class="stars page__stars">
+    <section id="curations" class="stars page__stars">
       <p class="stars__title">Upcoming Curations</p>
       <img class="stars__img1" src="https://lun-eu.icons8.com/api/assets/5899e52a-68d0-40dc-87a6-d6f6a5095063/Group 7.png" alt="stars">
+      <img class="stars__img1-small" src="https://lun-eu.icons8.com/api/assets/5b67f520-c776-4733-8838-7528c77c89c2/Group 7.png" alt="stars">
       <img class="stars__img2" src="https://lun-eu.icons8.com/api/assets/8db6ca40-8b96-46a8-bca0-5ffc77f3e99a/Group 6.png" alt="stars">
+      <img class="stars__img2-small" src="https://lun-eu.icons8.com/api/assets/a307c2cd-25f2-4997-a1d3-ec07d51ed3b1/Group 7.png" alt="stars">
     </section>
 
-    <section class="page__main-card">
+    <section id="main" class="page__main-card">
       <div class="main-card">
         <div class="main-card__photo">
           <img class="main-card__photo-main" src="https://lun-eu.icons8.com/api/assets/2fa710bb-750b-4857-97fa-cde8a64a8c73/Screen Shot 2020-06-02 at 5.56.19 PM.png" alt="face">
@@ -115,35 +207,62 @@
         </div>
   
         <div class="main-card__text-area">
-          <div class="main-card__text-title1">A LIVE CURATION WITH</div>
-          <div class="main-card__text-title2">Maristella González</div>
+          <div class="main-card__text-title1">
+            A LIVE CURATION WITH
+          </div>
+          <div class="main-card__text-title2"
+            >Maristella González
+          </div>
           <p class="main-card__text">
-            Enter the wonderous world of Showfields.</br>
-            Our mission is to create a better way for</br>
-            customers to discover, engage and shop</br>
-            emerging brands and artists of tomorrow.</br>
+            <span class="main-card__text-span">
+              Enter the wonderous world of Showfields.
+            </span>
+            Our mission is to create a better way for
+            customers to discover, engage and shop
+            emerging brands and artists of tomorrow.
+
+            <button class="main-card__text-btn">
+              RSVP
+            </button>
           </p>
-          <button class="main-card__text-btn">
-            RSVP
-          </button>
+          
         </div>
       </div>
 
       <div class="main-card__slider">
-        <input type="radio" checked/>
-        <input type="radio"/>
-        <input type="radio"/>
+        <form action="#">
+          <input
+            name="main-card input 1"
+            type="radio"
+            value="main-card-input-1"
+            checked
+          >
+          <input
+            name="main-card input 2"
+            type="radio"
+            value="main-card-input-2"
+          >
+          <input
+            name="main-card input 3"
+            type="radio"
+            value="main-card-input-3"
+          >
+        </form>
       </div>
     </section>
 
-    <section class="gallery page__gallery">
-      <div class="gallery__title">Watch Recent Live Curations</div>
-      <div class="gallery__table">
+    <section id="art" class="gallery page__gallery">
+      <div class="gallery__title">
+        Watch Recent Live Curations
+      </div>
+      <div id="brands" class="gallery__table">
         <div class="gallery__card card">
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/a53cd7fc-3a7a-4389-b173-5e37de75986d/Screen Shot 2020-06-01 at 7.58.36 PM.png" alt="Ekaterina Popova">
           <div class="card__frame"></div>
           <img class="card__bg-img-triangle1" src="https://lun-eu.icons8.com/api/assets/8a0c1875-ea89-462d-8999-721fd71158f9/Triangle.png" alt="triangle">
-          <div class="card__name">Ekaterina Popova</div>
+          <div class="card__name">
+            Ekaterina Popova
+          </div>
           <img class="card__second-img1" src="https://lun-eu.icons8.com/api/assets/9788b4be-2b11-4647-8bbc-28238d59a7bb/Group 170.png" alt="bag">
         </div>
 
@@ -151,13 +270,17 @@
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/9e10adff-2953-407c-8970-e75251443b47/Bitmap.png" alt="Nick Pinsker">
           <div class="card__frame"></div>
           <img class="card__bg-img-shape1" src="https://lun-eu.icons8.com/api/assets/6bd13ae5-a3dc-40a0-a327-befdd9ca2598/Combined Shape.png" alt="Combined Shape">
-          <div class="card__name">Nick Pinsker</div>
+          <div class="card__name">
+            Nick Pinsker
+          </div>
         </div>
 
         <div class="gallery__card card">
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/44dd6b0d-09c6-48eb-a082-9e0292b5abc6/Bitmap.png" alt="Lauren Mazzei">
           <div class="card__frame"></div>
-          <div class="card__name">Lauren Mazzei</div>
+          <div class="card__name">
+            Lauren Mazzei
+          </div>
           <div class="card__bg-img-circle1"></div>
           <img class="card__second-img2" src="https://lun-eu.icons8.com/api/assets/570b19b0-0c47-4669-bee6-22b52936f6a6/Group 404.png" alt="idea">
         </div>
@@ -166,13 +289,17 @@
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/9b111269-e545-4d41-a4bc-0a4832398124/Bitmap.png" alt="Emily Kammeyer">
           <div class="card__frame"></div>
           <div class="card__bg-img-btn"></div>
-          <div class="card__name">Emily Kammeyer</div>
+          <div class="card__name">
+            Emily Kammeyer
+          </div>
         </div>
 
         <div class="gallery__card card">
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/818e436a-2565-445a-9e6d-8510c26381c6/Bitmap.png" alt="Sarah Potter">
           <div class="card__frame"></div>
-          <div class="card__name">Sarah Potter</div>
+          <div class="card__name">
+            Sarah Potter
+          </div>
           <img class="card__bg-img-star" src="https://lun-eu.icons8.com/api/assets/08b06779-34f1-4709-9889-cb2c829df090/Star.png" alt="star">
           <img class="card__second-img3" src="https://lun-eu.icons8.com/api/assets/be86becd-52ce-480b-ab78-06d97ac84d41/Group 2955.png" alt="search">
         </div>
@@ -181,13 +308,17 @@
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/37a578e9-44f8-482d-90f3-2982adfab4a7/Bitmap.png" alt="Caleb Thill">
           <div class="card__frame"></div>
           <img class="card__bg-img-pentagon" src="https://lun-eu.icons8.com/api/assets/e1eadd14-d305-4a7c-8fb6-e267046492a0/Polygon.png" alt="pentagon">
-          <div class="card__name">Caleb Thill</div>
+          <div class="card__name">
+            Caleb Thill
+          </div>
         </div>
 
         <div class="gallery__card card">
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/a53cd7fc-3a7a-4389-b173-5e37de75986d/Screen Shot 2020-06-01 at 7.58.36 PM.png" alt="Ekaterina Popova">
           <div class="card__frame"></div>
-          <div class="card__name">Ekaterina Popova</div>
+          <div class="card__name">
+            Ekaterina Popova
+          </div>
           <div class="card__bg-img-circle2"></div>
           <img class="card__second-img4" src="https://lun-eu.icons8.com/api/assets/8b773bd2-e84b-4ea2-8012-2990850ea60a/Group 100.png" alt="clown">
         </div>
@@ -196,28 +327,36 @@
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/9e10adff-2953-407c-8970-e75251443b47/Bitmap.png" alt="Nick Pinsker">
           <div class="card__frame"></div>
           <div class="card__bg-img-btn2"></div>
-          <div class="card__name">Nick Pinsker</div>
+          <div class="card__name">
+            Nick Pinsker
+          </div>
         </div>
 
         <div class="gallery__card card">
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/44dd6b0d-09c6-48eb-a082-9e0292b5abc6/Bitmap.png" alt="Lauren Mazzei">
           <div class="card__frame"></div>
           <img class="card__bg-img-star2" src="https://lun-eu.icons8.com/api/assets/4488b56c-b217-4c08-9fab-27961f26cc8a/Star.png" alt="star">
-          <div class="card__name">Lauren Mazzei</div>
+          <div class="card__name">
+            Lauren Mazzei
+          </div>
         </div>
 
         <div class="gallery__card card">
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/9b111269-e545-4d41-a4bc-0a4832398124/Bitmap.png" alt="Emily Kammeyer">
           <div class="card__frame"></div>
           <img class="card__bg-img-pentagon2" src="https://lun-eu.icons8.com/api/assets/de1106eb-0dcd-4204-9dd3-a9851b6a9913/Polygon.png" alt="pentagon">
-          <div class="card__name">Emily Kammeyer</div>
+          <div class="card__name">
+            Emily Kammeyer
+          </div>
         </div>
 
         <div class="gallery__card card">
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/818e436a-2565-445a-9e6d-8510c26381c6/Bitmap.png" alt="Sarah Potter">
           <div class="card__frame"></div>
           <img class="card__bg-img-shape2" src="https://lun-eu.icons8.com/api/assets/2ebadd73-9d90-4c2d-80ce-c22fa50c456a/Combined Shape.png" alt="Combined Shape">
-          <div class="card__name">Sarah Potter</div>
+          <div class="card__name">
+            Sarah Potter
+          </div>
           <img class="card__second-img5" src="https://lun-eu.icons8.com/api/assets/58abd4d7-a3ed-4303-9b5e-a120e17faf36/Group 87.png" alt="circus">
         </div>
 
@@ -225,41 +364,109 @@
           <img class="card__img" src="https://lun-eu.icons8.com/api/assets/37a578e9-44f8-482d-90f3-2982adfab4a7/Bitmap.png" alt="Caleb Thill">
           <div class="card__frame"></div>
           <img class="card__bg-img-triangle2" src="https://lun-eu.icons8.com/api/assets/1e867283-d5de-4642-98e6-d989cd6d9106/Triangle.png" alt="triangle">
-          <div class="card__name">Caleb Thill</div>
+          <div class="card__name">
+            Caleb Thill
+          </div>
         </div>
 
     </section>
 
     <section class="footer page__footer">
       <div class="footer__table">
-        <div class="footer-card">
-          <div class="footer-card__title">ABOUT SHOWFIELDS</div>
-            <div class="footer-card__item">About</div>
-            <div class="footer-card__item">Contact</div>
-            <div class="footer-card__item">FAQ</div>
-            <div class="footer-card__item">Privacy Policy</div>
+        <div class="footer__card">
+          <div class="footer__card-title">
+            ABOUT SHOWFIELDS
+          </div>
+            <div class="footer-card__item">
+              <a href="#">
+              </a>
+              About
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Contact
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                FAQ
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Privacy Policy
+              </a>
+            </div>
         </div>
 
-        <div class="footer-card">
-          <div class="footer-card__title">VISIT US</div>
-            <div class="footer-card__item">Locations</div>
-            <div class="footer-card__item">Store Appointments</div>
-            <div class="footer-card__item">Virtual Appointments</div>
+        <div class="footer__card">
+          <div class="footer__card-title">
+            VISIT US
+          </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Locations
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Store Appointments
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Virtual Appointments
+              </a>
+              
+            </div>
         </div>
         
-        <div class="footer-card">
-          <div class="footer-card__title">PARTNER WITH US</div>
-            <div class="footer-card__item">Artists</div>
-            <div class="footer-card__item">Brand Partnerships</div>
-            <div class="footer-card__item">Careers</div>
+        <div class="footer__card">
+          <div class="footer__card-title">
+            PARTNER WITH US
+          </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Artists
+              </a>
+              
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Brand Partnerships
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Careers
+              </a>
+            </div>
         </div>
         
-        <div class="footer-card">
-          <div class="footer-card__title">FIND US</div>
-            <div class="footer-card__item">Instagram</div>
-            <div class="footer-card__item">Pinterest</div>
-            <div class="footer-card__item">Facebook</div>
-            <div class="footer-card__item">Twitter</div>
+        <div class="footer__card">
+          <div class="footer__card-title">
+            FIND US
+          </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Instagram
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Pinterest
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Facebook
+              </a>
+            </div>
+            <div class="footer-card__item">
+              <a href="#">
+                Twitter
+              </a>
+            </div>
         </div>
 
         <div class="footer__subscribe">
@@ -273,12 +480,140 @@
               class="footer__form-input"
               type="email"
               placeholder="Enter your email to subscribe"
-            />
+              required
+              />
             <button type="submit" class="footer__form-btn">
-              <img />
+              <img class="footer__form-arrow" src="./images/arrow.png">
             </button>
           </form>
+        </div>
+      </div>
+
+      <div class="footer__mobile">
+        <div class="footer__subscribe">
+          <div class="footer__subscribe-text">
+            STAY IN THE KNOW! SUBSCRIBE</br>
+            TO OUR NEWSLETTER. PLUS, RECEIVE</br>
+            10% OFF YOUR FIRST ORDER.
+          </div>
+          <form class="footer__form" method="POST">
+            <input
+              class="footer__form-input"
+              type="email"
+              placeholder="Enter your email to subscribe"
+              required
+            />
+            <button type="submit" class="footer__form-btn">
+              <img class="footer__form-arrow" src="./images/arrow.png">
+            </button>
+          </form>
+        </div>
+  
+        <div class="footer__item">
+          <div class="footer__item-title">
+            <a href="#">
+              ABOUT SHOWFIELDS
+            </a>
+            <button type="button" class="footer__item-btn">
+              +
+            </button>
+          </div>
           
+          <ul class="footer__horizontal-menu">
+            <li>
+              <a href="#">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <div class="footer__item-title">
+            <a href="#">
+              VISIT US
+            </a>
+            <button type="button" class="footer__item-btn">
+              +
+            </button>
+          </div>
+
+          <ul class="footer__horizontal-menu">
+            <li>
+              <a href="#">
+                Locations
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Store Appointments
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Virtual Appointments
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <div class="footer__item-title">
+            <a href="#">
+              PARTNER WITH US
+            </a>
+            <button type="button" class="footer__item-btn">
+              +
+            </button>
+          </div>
+
+          <ul class="footer__horizontal-menu">
+            <li>
+              <a href="#">
+                Artists
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Brand Partnerships
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Careers
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <a href="https://www.facebook.com/">
+            <img
+              class="footer__facebook-icon"
+              src="https://lun-eu.icons8.com/api/assets/19955462-974e-4d5b-97f5-3d81bc2c76d5/Layer 23.png"
+              alt="Facebook icon">
+          </a>
+          <a href="https://instagram.com/">
+            <img
+              class="footer__instagram-icon"
+              src="https://lun-eu.icons8.com/api/assets/ab4ad9c9-ce88-44e3-bff1-2922415acfd4/Layer 24.png"
+              alt="Instagram icon">
+          </a>
         </div>
       </div>
     </section>
